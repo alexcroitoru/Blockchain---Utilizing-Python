@@ -4,20 +4,7 @@
 
 ## Background
 
-Your new startup is focusing on building a portfolio management system that supports not only traditional assets
-like gold, silver, stocks, etc, but crypto-assets as well! The problem is, there are so many coins out there! It's
-a good thing you understand how HD wallets work, since you'll need to build out a system that can create them.
-
-You're in a race to get to the market. There aren't as many tools available in Python for this sort of thing, yet.
-Thankfully, you've found a command line tool, `hd-wallet-derive` that supports not only BIP32, BIP39, and BIP44, but
-also supports non-standard derivation paths for the most popular wallets out there today! However, you need to integrate
-the script into your backend with your dear old friend, Python.
-
-Once you've integrated this "universal" wallet, you can begin to manage billions of addresses across 300+ coins, giving
-you a serious edge against the competition.
-
-In this assignment, however, you will only need to get 2 coins working: Ethereum and Bitcoin Testnet.
-Ethereum keys are the same format on any network, so the Ethereum keys should work with your custom networks or testnets.
+Looking for Instructions on How to Create and Run this Wallet. 
 
 ## Dependencies
 
@@ -189,7 +176,11 @@ The following dependencies are required for this assignment and were likely alre
 
     - Screenshot the confirmation of the transaction like so:
 
-      ![btc-test](Images/btc-test.png)
+      ![btc-test](Images/my-btc-test.png)
+      ```
+      create_tx(BTCTEST,btc_acc,"miZgMxdGzSxCTpWazfD2KqhewoUvcQ6CC1", 0.00001)
+      send_tx(BTCTEST,btc_acc,'miZgMxdGzSxCTpWazfD2KqhewoUvcQ6CC1',0.00001)
+      ```
 
   - **Local PoA Ethereum transaction**
 
@@ -214,26 +205,11 @@ The following dependencies are required for this assignment and were likely alre
     - Send a transaction from the pre-funded address within the wallet to another, then copy the `txid` into
       MyCrypto's TX Status, and screenshot the successful transaction like so:
 
-      ![eth-test](Images/eth-test.png)
-### 7. Challenge Mode - **OPTIONAL**
-
-- Add support for `BTC`.
-
-- Add support for `LTC` using the sister library, [`lit`](https://github.com/blockterms/lit).
-
-- Add a function to track transaction status by `txid`.
-### 8. Submission
-
-- Create a `README.md` that contains the test transaction screenshots, as well as the code used to send them.
-  Pair the screenshot with the line(s) of code.
-
-- Write a short description about what the wallet does, what it's built with, and how to use it.
-
-- Include installing pip dependencies using `requirements.txt`, as well as cloning and installing `hd-wallet-derive`.
-  You may include the `hd-wallet-derive` folder in your repo, but still include the install instructions. You do not
-  need to include Python or PHP installation instructions.
-
-- Upload the project to a new GitHub repository.
-
-- Celebrate the fact that you now have an incredibly powerful wallet that you can expand to hundreds of coins!
-
+      ![eth-test](Images/my-eth-test.png)
+      
+      ```
+      w3.eth.getBalance("0x2Ad0FD35E0Df759985828a0E9597b98eb7caAE5e")
+      create_tx(ETH,eth_acc,"0x2Ad0FD35E0Df759985828a0E9597b98eb7caAE5e", 1000)
+      send_tx(ETH, eth_acc,"0x2Ad0FD35E0Df759985828a0E9597b98eb7caAE5e", 1000)
+      web3.eth.getBalance("0x2Ad0FD35E0Df759985828a0E9597b98eb7caAE5e")\
+      ```
