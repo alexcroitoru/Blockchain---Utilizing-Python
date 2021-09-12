@@ -204,7 +204,8 @@ The following dependencies are required for this assignment and were likely alre
 
     - Send a transaction from the pre-funded address within the wallet to another, then copy the `txid` into
       MyCrypto's TX Status, and screenshot the successful transaction like so:
-
+  
+     - I did not have any balance in my ETH account so I could not do an actual transaction, that being said, the code that is being run would be accurate with a balance in the account. 
       ![eth-test](Images/my-eth-test.png)
       
       ```
