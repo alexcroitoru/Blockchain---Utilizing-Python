@@ -1,10 +1,7 @@
 # Multi-Blockchain Wallet in Python
 
 ![newtons-coin-cradle](Images/newtons-coin-cradle.jpg)
-
-## Background
-
-Looking for Instructions on How to Create and Run this Wallet. 
+ 
 
 ## Dependencies
 
@@ -23,8 +20,6 @@ The following dependencies are required for this assignment and were likely alre
 
 - [`web3.py`](https://github.com/ethereum/web3.py) Python Ethereum library.
 
-
-## Instructions
 
 ### 1. Project setup
 
